@@ -1,0 +1,465 @@
+/* Global Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #faf3e0; /* Light beige for a welcoming feel */
+    color: #4a4a4a; /* Dark gray text for better readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h5 {
+    color: #2c2c2c; /* Darker gray for headers */
+}
+
+p {
+    margin: 0 0 1rem; /* Add spacing between paragraphs */
+}
+
+a {
+    color: #B89C83;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #f4e3d7; /* Light beige for a clean, elegant look */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c2c2c; /* Darker gray for better contrast */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.banner p {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+}
+
+.banner .btn {
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.banner .btn-warning {
+    background-color: #D1B89D;
+}
+
+.banner .btn-warning:hover {
+    background-color:  #B89C83;
+}
+
+.banner .btn-primary {
+    background-color:#D1B89D;
+}
+
+.banner .btn-primary:hover {
+    background-color:  #B89C83;
+}
+
+/* Blog Page Styles */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Blog Post Styles */
+h1.text-center {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+    text-transform: capitalize;
+}
+
+hr {
+    border: 1px solid #eaeaea;
+    margin: 1.5rem 0;
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-secondary {
+    background-color: #D1B89D;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #B89C83;
+}
+
+.btn-primary {
+    background-color: #D1B89D;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color:  #B89C83;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* Styles Specific to index.html */
+.index-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+.index-page .banner {
+    background-color: #faf3e0; /* Ensure consistent light beige background */
+    text-align: center;
+}
+
+.index-page .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c2c2c; /* Dark gray for headers */
+}
+
+.index-page .banner p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #4a4a4a; /* Light gray for subheading */
+}
+
+.index-page .button-container a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.index-page .btn-warning {
+    background-color: #D1B89D;
+    color: #5A4636;
+    border: none;
+}
+
+.index-page .btn-warning:hover {
+    background-color: #B89C83;
+}
+
+.index-page .btn-primary {
+    background-color: #D1B89D;
+    color: #5A4636;
+    border: none;
+}
+
+.index-page .btn-primary:hover {
+    background-color: #B89C83;
+}
+
+
+/* Styles Specific to shop.html */
+.shop-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #faf3e0; /* Light beige for consistency with index page */
+    margin: 0;
+    padding: 0;
+}
+
+.shop-notice {
+    text-align: center;
+    padding: 20px;
+    background-color: #fffaf0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+.shop-notice h2 {
+    font-size: 2rem;
+    color: #2c2c2c; /* Darker gray for header */
+    margin-bottom: 1rem;
+}
+
+.shop-notice p {
+    font-size: 1.2rem;
+    color: #4a4a4a; /* Dark gray for text */
+    margin: 0;
+}
+
+
+/* Styles Specific to blog.html */
+.blog-page {
+    background-color: #faf3e0; /* Consistent beige background */
+    padding: 2rem 0;
+}
+
+.blog-page h2.text-center {
+    font-size: 2.5rem;
+    color: #2c2c2c; /* Darker gray for title */
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #fffaf0 !important; /* Light cream color for card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.2s;
+    border-radius: 10px; /* Smooth rounded edges */
+}
+
+
+.card:hover {
+    transform: translateY(-5px); /* Hover lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c2c2c; /* Darker gray for titles */
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #4a4a4a; /* Medium gray for text */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0; /* Rounded top corners to match the card */
+    height: 200px;
+    object-fit: cover; /* Ensure consistent image dimensions */
+}
+
+.btn-primary {
+    background-color: #D1B89D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5A4636;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #B89C83; /* Darker blue on hover */
+}
+
+
+/* Article Page Styles */
+.article-page {
+    background-color: #faf3e0; /* Consistent light beige background */
+    padding: 3rem 1.5rem; /* Adjusted padding for better spacing */
+    margin: 0 auto;
+    max-width: 1100px; /* Increased max-width to reduce side white space */
+    border-radius: 10px;
+}
+
+
+.article-page h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c2c2c; /* Darker gray for headers */
+    margin-top: 4rem; /* More space above the title */
+    margin-bottom: 2rem; /* More space between title and the line */
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0; /* Faded line below the title */
+    padding-bottom: 1.5rem; /* Space between title and the line */
+}
+
+.article-page h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c2c2c; /* Darker gray for headers */
+    margin-top: 3rem; /* Increased space above h2 headings */
+    margin-bottom: 1.5rem; /* Increased space below h2 headings */
+    text-align: left;
+}
+
+.article-page h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c2c2c; /* Darker gray for headers */
+    margin-top: 2.5rem; /* Increased space above h3 headings */
+    margin-bottom: 1.5rem; /* Increased space below h3 headings */
+}
+
+.article-page hr {
+    display: none; /* Remove the horizontal line */
+}
+
+.article-page p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #4a4a4a; /* Medium gray for text */
+    margin-bottom: 2rem;
+}
+
+.article-page a {
+    color: #5A4636;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-page a:hover {
+    text-decoration: none;
+}
+
+.article-page ul {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.article-page ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.article-page ol {
+    padding-left: 2rem; /* Indent the list items for better alignment */
+    margin-bottom: 1.5rem; /* Add spacing below the list */
+    line-height: 1.8; /* Adjust line spacing for better readability */
+    font-size: 1.1rem; /* Ensure consistent font size */
+    color: #4a4a4a; /* Match the color with the rest of the text */
+}
+
+.article-page ol li {
+    margin-bottom: 1rem; /* Add space between list items */
+    font-weight: normal; /* Ensure normal font weight */
+}
+
+.article-page img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-page .btn-secondary {
+    background-color: #D1B89D;
+    color:  #5A4636;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 3rem; /* Added space above button */
+    margin-bottom: 4rem; /* Added space below button */
+}
+
+.article-page .btn-secondary:hover {
+    background-color: #B89C83;
+}
+
+.article-page .back-button {
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+
+/* Styling for the "Our Blog" header */
+.blog-header {
+    font-size: 2.8rem; /* Slightly larger font size */
+    font-weight: bold; /* Make it bold */
+    color: #2c2c2c; /* Darker gray for contrast */
+    margin-bottom: 6rem; /* Increased spacing below the header */
+    text-transform: uppercase; /* Make the text uppercase for emphasis */
+    letter-spacing: 2px; /* Add letter spacing for elegance */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+/* Styling for the "Back to Home" button to match shop.html */
+.btn-secondary {
+    background-color: #D1B89D;
+    color:  #5A4636;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 3rem; /* Added consistent spacing */
+}
+
+.btn-secondary:hover {
+    background-color: #B89C83; /* Darker gray on hover */
+}
